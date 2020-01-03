@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/huellafondo"
+    android:scrollbars="vertical">
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+    <TextView
+        android:id="@+id/desc_prod"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop= "60dp"
+        android:text="Productos Findme"
+
+        android:textStyle="normal"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textAppearance="?attr/textAppearanceListItem"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:background="@drawable/barra"
+        android:layout_height="4dp"
+        android:layout_alignLeft="@+id/desc_prod"
+        android:layout_below="@+id/desc_prod"/>
+    <TextView
+        android:id="@+id/numero"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop= "100dp"
+        android:textSize="15dp"
+        android:textColor="@color/texto"
+        android:text="Marca de Champus:"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:background="@drawable/barra"
+        android:layout_height="4dp"
+        android:layout_marginTop= "35dp"
+        android:layout_alignLeft="@+id/desc_prod"
+        android:layout_below="@+id/desc_prod"/>
+
+
+    <Button
+        android:text="Champus Find me"
+        android:id="@+id/champu"
+        android:layout_height="60dp"
+        android:textAlignment="1"
+        android:background="#2196f3"
+        android:textColor="@android:color/white"
+
+        android:drawableRight="@drawable/confirm"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/numero"
+        android:layout_marginTop="40dp"
+        android:drawablePadding="8dp"/>
+
+    <Button
+        android:text="Comida Find me"
+        android:id="@+id/comida"
+        android:layout_height="60dp"
+        android:textAlignment="1"
+        android:background="#2196f3"
+        android:textColor="@android:color/white"
+
+        android:drawableRight="@drawable/confirm"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/numero"
+        android:layout_marginTop="110dp"
+        android:drawablePadding="8dp"/>
+
+    <Button android:text="Ropa Find me"
+        android:id="@+id/ropa"
+        android:layout_height="60dp"
+        android:textAlignment="1"
+        android:background="#2196f3"
+        android:textColor="@android:color/white"
+
+        android:drawableRight="@drawable/confirm"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/numero"
+        android:layout_marginTop="180dp"
+        android:drawablePadding="8dp"/>
+    <Button
+        android:text="Accesorios Find me"
+        android:id="@+id/accesorio"
+        android:layout_height="60dp"
+        android:textAlignment="1"
+        android:background="#2196f3"
+        android:textColor="@android:color/white"
+
+        android:drawableRight="@drawable/confirm"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/numero"
+        android:layout_marginTop="250dp"
+        android:drawablePadding="8dp"/>
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,160 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/huellafondo"
+    android:fitsSystemWindows="true">
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabReportPet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mapa1"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="4dp"
+        android:layout_gravity="right"
+       />
+
+    <ImageView
+        android:id="@+id/petPhoto"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="90dp"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center_horizontal"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/petPhoto"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:stretchColumns="1"
+                android:layout_gravity="center_horizontal">
+                <TableRow>
+                    <TextView
+                        android:padding="5dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/icons"
+                        android:text="Nombre de Mascota" />
+                    <TextView
+                        android:padding="5dp"
+                        android:textColor="@color/login"
+                        android:id="@+id/txvPetName"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:padding="5dp"
+                        android:textColor="@color/icons"
+                        android:textStyle="bold"
+                        android:text="Sexo"/>
+                    <TextView
+                        android:padding="5dp"
+                        android:textColor="@color/login"
+                        android:id="@+id/txvPetSex"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:padding="5dp"
+                        android:textColor="@color/icons"
+                        android:textStyle="bold"
+                        android:text="Tipo"/>
+                    <TextView
+                        android:padding="5dp"
+                        android:textColor="@color/login"
+                        android:id="@+id/txvPetType"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:padding="5dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/icons"
+                        android:text="Raza"/>
+                    <TextView
+                        android:padding="5dp"
+                        android:textColor="@color/login"
+                        android:id="@+id/txvPetRace"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:padding="5dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/icons"
+                        android:text="Edad"/>
+                    <TextView
+                        android:padding="5dp"
+                        android:textColor="@color/login"
+                        android:id="@+id/txvPetAge"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:padding="5dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/icons"
+                        android:text="Vacunado"/>
+                    <TextView
+                        android:padding="5dp"
+                        android:textColor="@color/login"
+                        android:id="@+id/txvPetVaccinated"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:padding="5dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/icons"
+                        android:text="Mi Información"/>
+                    <TextView
+                        android:padding="5dp"
+                        android:textColor="@color/login"
+                        android:id="@+id/txvPetInfo"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:padding="5dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/icons"
+                        android:text="Información de perdida"/>
+                </TableRow>
+                <TableRow>
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/tilLostPetInfo"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_span="2">
+                        <EditText
+                            android:id="@+id/edtLostPetInfo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Información acerca de pérdida"/>
+                    </android.support.design.widget.TextInputLayout>
+                </TableRow>
+
+            </TableLayout>
+
+
+
+        </ScrollView>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

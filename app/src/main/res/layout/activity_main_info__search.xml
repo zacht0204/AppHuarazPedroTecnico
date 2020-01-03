@@ -1,0 +1,170 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/huellafondo"
+    android:orientation="vertical">
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/include" />
+
+
+
+
+
+    <ImageView
+        android:id="@+id/petPhoto"
+        android:layout_width="150dp"
+        android:gravity="center"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/include"
+        android:layout_centerHorizontal="true" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/petPhoto"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:stretchColumns="1"
+            android:layout_gravity="center_horizontal">
+            <TableRow>
+                <TextView
+                    android:padding="5dp"
+                    android:textColor="#D50000"
+                    android:textStyle="bold"
+                    android:text="Nombre de Mascota" />
+                <TextView
+                    android:padding="5dp"
+                    android:textColor="#01579B"
+                    android:textStyle="bold"
+                    android:id="@+id/txvPetName"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:padding="5dp"
+                    android:textColor="#D50000"
+                    android:textStyle="bold"
+                    android:text="Sexo"/>
+                <TextView
+                    android:padding="5dp"
+                    android:textColor="#01579B"
+                    android:textStyle="bold"
+                    android:id="@+id/txvPetSex"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:padding="5dp"
+                    android:textColor="#D50000"
+                    android:textStyle="bold"
+                    android:text="Tipo"/>
+                <TextView
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:textColor="#01579B"
+                    android:id="@+id/txvPetType"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:padding="5dp"
+                    android:textColor="#D50000"
+                    android:textStyle="bold"
+                    android:text="Raza"/>
+                <TextView
+                    android:padding="5dp"
+                    android:textColor="#01579B"
+                    android:textStyle="bold"
+                    android:id="@+id/txvPetRace"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:padding="5dp"
+                    android:textColor="#D50000"
+                    android:textStyle="bold"
+                    android:text="Edad"/>
+                <TextView
+                    android:padding="5dp"
+                    android:textColor="#01579B"
+                    android:textStyle="bold"
+                    android:id="@+id/txvPetAge"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:padding="5dp"
+                    android:textColor="#D50000"
+                    android:textStyle="bold"
+                    android:text="Vacunado"/>
+                <TextView
+                    android:padding="5dp"
+                    android:textColor="#01579B"
+                    android:textStyle="bold"
+                    android:id="@+id/txvPetVaccinated"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:padding="5dp"
+                    android:textColor="#D50000"
+                    android:textStyle="bold"
+                    android:text="Mi Información"/>
+                <TextView
+                    android:padding="5dp"
+                    android:textColor="#01579B"
+                    android:textStyle="bold"
+                    android:id="@+id/txvPetInfo"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:padding="5dp"
+                    android:textColor="#D50000"
+                    android:textStyle="bold"
+                    android:text="Información de perdida"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_span="2"
+                    android:padding="5dp"
+                    android:textColor="#01579B"
+                    android:textStyle="bold"
+                    android:id="@+id/txvPetLostInfo"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:padding="5dp"
+                    android:textColor="#D50000"
+                    android:textStyle="bold"
+                    android:text="última Ubicación"/>
+                <Button
+                    android:padding="5dp"
+                    android:background="#FFFFFF"
+                    android:id="@+id/btnlastLocation"
+                    android:layout_width="20dp"
+                    android:text="Ubicacion"
+                    android:textStyle="bold"
+                    android:drawableRight="@drawable/location"
+                    android:drawableLeft="@drawable/location"
+                    android:textColor="#2962FF"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+        </TableLayout>
+
+
+
+    </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

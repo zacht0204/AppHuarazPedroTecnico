@@ -1,0 +1,114 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="8dp"
+    android:background="@color/accent_color"
+    android:weightSum="1">
+
+
+
+
+    <ListView
+        android:id="@+id/lista_noticia"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:alwaysDrawnWithCache="true"
+        android:dividerHeight="14dp"
+        android:horizontalSpacing="12dp"
+        android:scrollingCache="true"
+        android:smoothScrollbar="true"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="3dp"
+
+        >
+
+    </ListView>
+    <!--
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/ocultar"
+        android:layout_width="match_parent"
+        android:text="Buscar"
+        android:background="@drawable/layout_bl"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:background="#FFFFFF"
+        android:id="@+id/llSearchLostPets"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="2dp">
+        <TextView
+            android:textStyle="bold"
+            android:textColor="#D50000"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buscar Capacitaciones "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#01579B"
+            android:text="Provincia"/>
+
+        <Spinner
+            android:id="@+id/district_spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:prompt="@string/promptDistrito"
+            android:spinnerMode="dropdown"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#01579B"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Distrito"/>
+
+        <Spinner
+            android:id="@+id/petType_spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:prompt="@string/promptTipoMascota"
+            android:spinnerMode="dropdown"/>
+
+        <Button
+            android:id="@+id/btnSearchLostPets"
+            android:layout_gravity="center"
+            android:text="Buscar"
+            android:layout_width="wrap_content"
+            android:background="@drawable/layout_bl"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ListView
+        android:id="@+id/lista_lost_pet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alwaysDrawnWithCache="true"
+        android:dividerHeight="1dp"
+        android:horizontalSpacing="2dp"
+        android:scrollingCache="true"
+        android:smoothScrollbar="true"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="3dp"
+        android:listSelector="@color/selector"
+        >
+
+    </ListView>
+</LinearLayout>
+</LinearLayout>
+-->
+</FrameLayout>

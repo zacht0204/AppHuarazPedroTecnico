@@ -1,0 +1,103 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@android:color/white">
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:id="@+id/imageView"
+            android:layout_weight="0.05"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:src="@drawable/logo" />
+
+
+
+
+        <EditText
+            android:id="@+id/usuario"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.03"
+            android:hint="Usuario"
+            android:maxLength="10"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:gravity="center"
+            android:textColorHint="@color/titulo"
+            android:theme="@style/CampoTextoVerde"/>
+
+
+        <EditText
+            android:id="@+id/contrasena"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:ems="10"
+            android:maxLength="8"
+            android:gravity="center"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:textColorHint="@color/titulo"
+            android:theme="@style/CampoTextoVerde"
+            android:layout_weight="0.03" />
+
+        <Button
+            android:id="@+id/boton_iniciar_sesion"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@android:color/white"
+
+            android:background="@drawable/layout_bl"
+            android:text="Iniciar Sesion" />
+        <TextView
+            android:id="@+id/texto_conectar"
+            android:layout_width="210dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.003"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        <Button
+            android:id="@+id/boton_crear_cuenta"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@android:color/white"
+            android:background="@drawable/layout_bl"
+            android:text="Registro" />
+
+    </LinearLayout>
+    <!--
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/llamar"
+        android:layout_gravity="right"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="false"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp" />
+    -->
+</RelativeLayout>

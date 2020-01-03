@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/huellafondo"
+
+    android:scrollbars="vertical">
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+    <TextView
+        android:id="@+id/desc_prod"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop= "60dp"
+        android:text="Accesorio Findme"
+
+        android:textStyle="normal"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textAppearance="?attr/textAppearanceListItem"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:background="@drawable/barra"
+        android:layout_height="4dp"
+        android:layout_alignLeft="@+id/desc_prod"
+        android:layout_below="@+id/desc_prod"/>
+    <TextView
+        android:id="@+id/numero"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop= "100dp"
+        android:textSize="15dp"
+        android:textColor="@color/texto"
+        android:text="Accesorio "/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:background="@drawable/barra"
+        android:layout_height="4dp"
+        android:layout_marginTop= "35dp"
+        android:layout_alignLeft="@+id/desc_prod"
+        android:layout_below="@+id/desc_prod"/>
+
+
+
+    <CheckBox
+        android:id="@+id/opcion_champinones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="Trixie PET :    S/30 soles"
+        android:layout_marginTop="150dp"
+        android:drawablePadding="8dp"/>
+
+    <CheckBox
+        android:id="@+id/opcion_champinones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="I love Pet:    S/40 soles"
+        android:layout_marginTop="180dp"
+        android:drawablePadding="8dp"/>
+
+    <CheckBox
+        android:id="@+id/opcion_champinones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="Clean Pet:    S/30 soles"
+        android:layout_marginTop="210dp"
+        android:drawablePadding="8dp"/>
+
+    <CheckBox
+        android:id="@+id/opcion_champinones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="Pet Champu :    S/33 soles"
+        android:layout_marginTop="240dp"
+        android:drawablePadding="8dp"/>
+    <CheckBox
+        android:id="@+id/opcion_champinones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="Love Clean:    S/30 soles"
+        android:layout_marginTop="270dp"
+        android:drawablePadding="8dp"/>
+    <CheckBox
+        android:id="@+id/opcion_champinones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="Pet world:    S/45 soles"
+        android:layout_marginTop="300dp"
+        android:drawablePadding="8dp"/>
+
+    <CheckBox
+        android:id="@+id/opcion_champinones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="Burbujas Pet:    S/34 soles"
+        android:layout_marginTop="330dp"
+        android:drawablePadding="8dp"/>
+    <CheckBox
+        android:id="@+id/opcion_champinones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="Pet For Love:    S/40 soles"
+        android:layout_marginTop="360dp"
+        android:drawablePadding="8dp"/>
+
+    <CheckBox
+        android:id="@+id/opcion_champinones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="Love for Clean:    S/33 soles"
+        android:layout_marginTop="390dp"
+        android:drawablePadding="8dp"/>
+
+    <CheckBox
+        android:id="@+id/opcion_champinones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="Pet Love:    S/39 soles"
+        android:layout_marginTop="420dp"
+        android:drawablePadding="8dp"/>
+
+
+    <Button
+        android:id="@+id/comprar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:checked="false"
+        android:text="Comprar"
+        android:textColor="#FFFFFF"
+        android:background="#01579B"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="450dp"
+        android:drawablePadding="8dp"/>
+
+
+
+
+</RelativeLayout>

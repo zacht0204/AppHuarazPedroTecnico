@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/material_background">
+    <group android:checkableBehavior="single"
+        android:background="@drawable/material_background">
+        <item
+            android:id="@+id/menu_seccion_1"
+            android:icon="@drawable/ic_home"
+            android:background="@drawable/material_background"
+            android:title="@string/seccion_1"/>
+        <item
+            android:id="@+id/menu_seccion_2"
+            android:icon="@android:drawable/ic_search_category_default"
+            android:title="@string/seccion_2"/>
+        <item
+            android:id="@+id/menu_seccion_3"
+            android:icon="@drawable/ic_truck"
+            android:title="@string/seccion_3"/>
+        <item
+            android:id="@+id/menu_seccion_4"
+            android:icon="@drawable/ic_store"
+            android:title="@string/seccion_4"/>
+        <item
+            android:id="@+id/menu_seccion_5"
+            android:icon="@drawable/ic_action_add"
+            android:title="@string/seccion_5"/>
+        <item
+            android:id="@+id/menu_seccion_6"
+            android:icon="@android:drawable/ic_lock_power_off"
+            android:title="@string/seccion_6"/>
+    </group>
+
+   <!-- <item
+        android:id="@+id/navigation_subheader"
+        android:title="@string/otras_opciones">
+        <menu>
+            <item
+                android:id="@+id/menu_opcion_1"
+                android:icon="@drawable/ic_menu"
+                android:title="@string/opcion_1"/>
+            <item
+                android:id="@+id/menu_opcion_2"
+                android:icon="@drawable/ic_menu"
+                android:title="@string/opcion_2"/>
+        </menu>
+    </item>-->
+</menu>

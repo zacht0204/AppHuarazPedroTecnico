@@ -1,0 +1,26 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimaryDark">@color/color_primary_dark</item>
+        <item name="colorAccent">@color/color_accent</item>
+    </style>
+    <style name="CampoTextoVerde" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">#2e7d32</item>
+        <item name="colorControlActivated">#2e7d32</item>
+        <item name="android:textColorHighlight">#2e7d32</item>
+    </style>
+
+    <style name="CampoTexto" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">#03A9F4</item>
+        <item name="colorControlActivated">#03A9F4</item>
+        <item name="android:textColorHighlight">#03A9F4</item>
+    </style>
+
+    <style name="Hint" parent="TextAppearance.Design.Hint">
+        <item name="android:textColor">#03A9F4</item>
+    </style>
+
+</resources>

@@ -1,0 +1,275 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/accent_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:paddingTop="1dp"
+
+                android:id="@+id/desc_prod"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginLeft="0dp"
+                android:text=""
+                android:drawableLeft="@drawable/mini"
+                android:drawableRight="@drawable/mini"
+                android:textSize="1dp"
+                android:textColor="@color/icons"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textAppearance="?attr/textAppearanceListItem"
+                />
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:background="@drawable/layout_bl2"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:text="Capturar Flor"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/color_primary"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"/>
+
+
+                <ImageView
+
+                    android:id="@+id/ownerPhoto"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/planta"
+                    android:layout_gravity="center_horizontal"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="horizontal"
+                android:background="@drawable/layout_bl2"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+
+                    android:id="@+id/textView"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/color_primary"
+                    android:text="Capturar Hoja" />
+
+
+                <ImageView
+
+                    android:id="@+id/ownerPhoto2"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/planta"
+                    android:layout_gravity="center_horizontal"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:background="@drawable/layout_bl2"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:text="Capturar Raiz"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/color_primary"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"/>
+
+
+                <ImageView
+
+                    android:id="@+id/ownerPhoto3"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/planta"
+                    android:layout_gravity="center_horizontal"/>
+
+
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tilFullname"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:theme="@style/CampoTexto"
+                    android:textColorHint="#2196F3"
+                    android:textColor="#000000"
+                    android:inputType="textPersonName"
+                    android:hint="Distrito"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tilSurname"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:theme="@style/CampoTexto"
+                    android:textColorHint="#2196F3"
+                    android:inputType="textPersonName"
+                    android:hint="Ciudad"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/boton_registrar_planta"
+                android:layout_width="200dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@android:color/white"
+                android:background="@drawable/layout_bl"
+                android:text="Registrar Planta"/>
+<!--
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#D50000"
+                android:textStyle="bold"
+                android:text="Distrito"/>
+            -->
+<!--
+            <Spinner
+
+                android:id="@+id/spnDistrict"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"/>
+                -->
+            <!--
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tilAddress"
+                android:layout_width="fill_parent"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:theme="@style/CampoTexto"
+                    android:textColorHint="#D50000"
+                    android:textStyle="bold"
+                    android:inputType="textPostalAddress"
+                    android:hint="Dirección"/>
+            </android.support.design.widget.TextInputLayout>
+            -->
+<!--
+            <RadioGroup
+                android:id="@+id/rbgSexo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="#D50000"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:text="Sexo"/>
+                <RadioButton
+                    android:id="@+id/rbtnSexoM"
+                    android:text="M"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"/>
+                <RadioButton
+                    android:id="@+id/rbtnSexoF"
+                    android:text="F"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+            -->
+
+
+            <TextView
+                android:paddingTop="1dp"
+
+                android:id="@+id/desc_prod5"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="0dp"
+                android:text=""
+                android:drawableLeft="@drawable/mini"
+                android:drawableRight="@drawable/mini"
+                android:textSize="1dp"
+                android:textColor="@color/icons"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textAppearance="?attr/textAppearanceListItem"
+                />
+        </LinearLayout>
+
+<!--
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabSaveMyInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_save"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="4dp"
+            android:layout_alignParentRight="true"
+            app:fabSize="normal" />
+
+        -->
+
+
+    </RelativeLayout>
+
+</ScrollView>

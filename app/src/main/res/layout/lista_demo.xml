@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="?attr/listPreferredItemHeight"
+    android:orientation="vertical"
+    android:paddingBottom="8dp"
+    android:paddingLeft="2dp"
+    android:background="@color/accent_color"
+    android:paddingRight="2dp"
+    android:paddingTop="8dp">
+
+    <ImageView
+        android:id="@+id/petPhoto"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_below="@+id/demo"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="10dp"
+        android:text="Compañía"
+        android:textColor="@color/texto"
+        tools:text="" />
+
+
+
+
+    <TextView
+        android:id="@+id/petInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop= "35dp"
+        android:text="Cuenta: "
+        android:textColor="@color/ciudad"/>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:background="@drawable/barra"
+        android:layout_height="4dp"
+        android:id="@+id/demo"
+        android:layout_alignLeft="@+id/desc_prod"
+        android:layout_below="@+id/petName1"/>
+
+
+
+
+
+    <TextView
+        android:id="@+id/petName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Moneda: "
+        android:layout_below="@+id/petInfo"
+        android:layout_alignStart="@+id/petInfo"
+        android:textColor="@color/ciudad"/>
+
+    <TextView
+        android:id="@+id/petName1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:text="Registro de Plantas"
+        android:textAppearance="?attr/textAppearanceListItem"
+        tools:text="Pedidos Pendientes"
+        android:textColor="@color/titulo"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/petInfo" />
+
+    <TextView
+        android:id="@+id/petName2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Temperatura:16°C"
+        android:layout_below="@+id/petName"
+        android:layout_alignStart="@+id/petName"
+        android:textColor="@color/evaluacion"/>
+    <TextView
+        android:id="@+id/petName3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hora:12:00"
+        android:layout_below="@+id/petName2"
+        android:layout_alignStart="@+id/petName2"
+        android:textColor="@color/icons"/>
+
+    <TextView
+        android:id="@+id/petName4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Region:Ancash "
+        android:layout_below="@+id/petName3"
+        android:layout_alignStart="@+id/petName3"
+        android:textColor="@color/icons"/>
+
+
+    <TextView
+        android:id="@+id/petName5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pedro Manrique"
+        android:layout_below="@+id/petName4"
+        android:layout_alignStart="@+id/petName4"
+        android:textColor="@color/icons"/>
+    <TextView
+        android:id="@+id/petName6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Numero:926026"
+        android:layout_below="@+id/petName5"
+        android:layout_alignStart="@+id/petName5"
+        android:textColor="@color/numero"/>
+
+    <TextView
+        android:id="@+id/petName7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cliente Recurrente"
+        android:layout_below="@+id/petName6"
+        android:layout_alignStart="@+id/petName6"
+        android:textColor="@color/local"/>
+
+    <CheckBox
+        android:id="@+id/petName8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/petName7"
+        android:layout_alignStart="@+id/petName7"
+        android:textColor="@color/check"
+        android:text="Diagnosticado" />
+<!--
+    <Button
+        android:id="@+id/petName9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/petName8"
+        android:layout_alignStart="@+id/petName8"
+        android:text="Ver Mapa" />
+-->
+
+    <ImageView
+        android:id="@+id/petPhoto2"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_below="@+id/petName7"
+        android:layout_alignStart="@+id/petName7"
+        android:layout_marginLeft="-101dp"
+        android:layout_marginTop="160dp"
+        android:text="Compañía"
+        android:textColor="@color/texto"
+        tools:text="" />
+
+
+    <ImageView
+        android:id="@+id/petPhoto3"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_below="@+id/demo"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="1500dp"
+        android:layout_marginTop="324dp"
+        android:layout_marginEnd="-101dp"
+        android:text="Compañía"
+        android:textColor="@color/texto"
+        tools:text="" />
+
+
+
+</RelativeLayout>

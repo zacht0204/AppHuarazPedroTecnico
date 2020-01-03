@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:fitsSystemWindows="true"
+    >
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/include" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.05"
+            android:gravity="center"
+            android:src="@drawable/planta" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilUser"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/edtUser"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Usuario"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilPass"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/edtPass"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="Contraseña"/>
+        </android.support.design.widget.TextInputLayout>
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilPassConfirm"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/edtPassConfirm"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="Confirmar Contraseña"/>
+        </android.support.design.widget.TextInputLayout>
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilEmail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/edtEmail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textWebEmailAddress"
+                android:hint="Numero de Telefono"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnSignUp"
+            android:text="Registrarme"
+            android:textColor="@color/accent_color"
+            android:background="@drawable/layout_bl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</RelativeLayout>

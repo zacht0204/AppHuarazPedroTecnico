@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="?attr/listPreferredItemHeight"
+    android:orientation="vertical"
+    android:paddingBottom="8dp"
+    android:background="@drawable/dos"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="8dp">
+
+
+
+    <TextView
+        android:textColor="#FF0000"
+        android:textStyle="bold"
+        android:text="awasasas"
+        android:id="@+id/name"
+        android:paddingTop="30dp"
+        android:layout_width="120dp"
+        android:layout_height="80dp" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre"
+        android:layout_toRightOf="@+id/name"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textColor="#0000FF"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:text="Large Text"
+        android:id="@+id/phone0"
+        android:textColor="#0000FF"
+        android:layout_marginTop="70dp"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/phone" />
+
+</RelativeLayout>
+

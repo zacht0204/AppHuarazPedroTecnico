@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_primary">#3F51B5</color>
+    <color name="color_primary_dark">#303F9F</color>
+    <color name="color_accent">#D50000</color>
+    <color name="texto">#000000</color>
+    <color name="textColor">#2e7d32</color>
+    <color name ="titulo">#000000</color>
+    <color name="selector">#BBDEFB</color>
+    <color name="login">#00E676</color>
+    <color name="icons">#00E676</color>
+    <color name="accent_color">#FFFFFF</color>
+    <color name="evaluacion">#03A9F4</color>
+
+    <color name="ciudad">#FF1744</color>
+    <color name="provincia">#FF1744</color>
+
+    <color name="numero">#C6FF00</color>
+
+    <color name="local">#C6FF00</color>
+    <color name="check">#E040FB</color>
+
+    <!--Colores temporrales-->
+    <color name="hintInfo">#FF8A65</color>
+</resources>
